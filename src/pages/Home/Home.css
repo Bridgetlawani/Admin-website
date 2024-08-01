@@ -1,0 +1,112 @@
+body{
+    font-family: "Work Sans", sans-serif;
+    margin: 0%;
+  }
+  .info-wrapper {
+    display: flex;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    gap: 0px;
+    opacity: 0px;
+    margin: 2rem;
+}
+.logo-div{
+    display: flex;
+    margin-left: 4rem;
+    padding: 10px;
+}
+.logo-text{
+    color: #213F7D;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.logo-img{
+    display: flex;
+    
+}
+label {
+    display: flex;
+    flex-direction: column;
+    /* width: 387px; */
+    
+}
+.image{
+    width: 600px;
+    height: 337.57px;
+    top: 281px;
+    left: 67px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+h1{
+    color: #213F7D;
+    width: 387px;
+    text-align: left;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+
+}
+.form-box{
+    width: 904px;
+    height: 200px;
+    top: -5px;
+    left: 736px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 3rem;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+
+}
+.paragraph1{
+    color: #545F7D;
+    text-align: left;
+    
+
+}
+input{
+    
+    margin-top: 10px;
+    margin-right: 0rem;
+    padding: 12px;
+    color: #545F7D;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 14px;
+    font-weight: 200;
+
+    
+}
+.info-button{
+    width: 387px;
+    background: #39CDCC;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    
+    
+}
+.paragraph2{
+    color: #39CDCC;
+    /* font-family: Avenir Next; */
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+
+}
+.show-txt{
+    position: relative;
+    color: #39CDCC;
+    left: 16.8rem;
+    bottom: 1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    
+
+}

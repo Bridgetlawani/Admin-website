@@ -1,0 +1,30 @@
+body{
+    font-family: "Work Sans", sans-serif;
+}
+.about-user-wrap{
+    display: flex;
+    width: 100%;
+}
+.about-user-wrap-ul{
+    width: 15%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0%;
+    padding:.6rem  .4rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+.about-user-wrap-ul li{
+    padding:.4rem .4rem;
+    font-size: 12px;
+    line-height: 18.77px;
+    color: #213F7D;
+    font-weight: 400;
+}
+.about-user-details {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 60rem;
+    margin-bottom: 3rem;
+}
