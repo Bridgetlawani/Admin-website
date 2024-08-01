@@ -24,6 +24,8 @@ import users from '../../assets/Images/users.svg'
 import whitelist from '../../assets/Images/whitelist.svg'
 import logout from '../../assets/Images/logout.svg'
 import sidearrow from '../../assets/Images/sidearrow.svg'
+import AboutSection1 from '../AboutSection1/AboutSection1'
+import AboutSection2 from '../AboutSection2/AboutSection2'
 const items = [
   {   img1: switchs, itemname: 'Switch Organization', img2: arrow,},
   {img1: board, itemname: 'Dashboard',},
@@ -59,24 +61,24 @@ const items = [
 function AboutUser() {
   return (
     <div className='about-user-wrap'>
-      <ul className='about-user-wrap-ul'>
-      {items.map((item, index) =>(
-        <li key={index} className='about-user-wrap-li'><img src={item.img1} /> {item.itemname} <img src={item.img2} /> 
-        </li>
-      ))}
-    </ul>
-    <div className='about-user-details'>
-        <p><img src={sidearrow}/> <span>Back to Users</span></p>
-        <div>
-            <h2>User Details</h2>
-            <div>
-                <button>Blacklist User</button>
-                <button>Activate User</button>
+        <ul className='about-user-wrap-ul'>
+        {items.map((item, index) =>(
+            <li key={index} className='about-user-wrap-li'><img src={item.img1} /> {item.itemname} <img src={item.img2} /> 
+            </li>
+        ))}
+        </ul>
+        <div className='about-user-details'>
+            <p><img src={sidearrow}/> <span className='aboutuser-span'>Back to Users</span></p>
+            <div className='about-user1-container'>
+                <h2 className='about-user-h2'>User Details</h2>
+                <div>
+                    <button className='about-user-btn1'>Blacklist User</button>
+                    <button className='about-user-btn2'>Activate User</button>
+                </div>
             </div>
+            <div> <AboutSection1/> </div>
+            <div className='about-section2-div'> <AboutSection2/> </div>   
         </div>
-        <div></div>
-        <div></div>  
-    </div>
     </div>
   )
 }
