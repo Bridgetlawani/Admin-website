@@ -1,0 +1,55 @@
+.filtersection1{
+    position: relative;
+    height: 30rem;
+    width: 279px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #fff;
+    bottom: 0.6rem;
+    top: 8rem;
+    left: 22px;
+    padding-top: 22px;
+}
+
+.filtersection1 label{
+    color: #545F7D;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.filtersection1 input{
+    color: #545F7D;
+   
+}
+.filter-int{
+    width: 80%;
+}
+.filtersection2{
+    position: relative;
+    height: 8rem;
+    width: 9rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #fff;
+    bottom: 15rem;
+    left: 37rem;
+    padding: .2rem;
+    display: block;  
+}
+.reset{
+    width: 98px;
+    padding: 13px;
+    margin-right: 10px;
+    margin-left: 18px;
+    border: 1px solid #545F7D
+}
+.reset2-btn{
+    width: 98px;
+    background-color: #39CDCC;
+    color: #fff;
+    padding: 13px;
+    margin-left: 6px;
+}
+.span-filter{
+    position: relative;
+    right: 2rem;
+    color: #9a9faa;
+}

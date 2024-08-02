@@ -27,6 +27,7 @@ import UserInformation from '../UserInformation/UserInformation'
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
+import FilterSection from '../FilterSection/FilterSection'
 
 const items = [
   {   img1: switchs, itemname: 'Switch Organization', img2: arrow,},
@@ -56,7 +57,14 @@ const items = [
   {img1: fees, itemname: 'Fees and Pricing',},
   {img1: audit, itemname: 'Audit Logs',},
 ];
-
+const handleClick = () => {
+  let show = document.getElementById("filtershow");
+  if (show.style.display === "none") {
+    show.style.display = "block";
+  } else {
+    show.style.display = "none";
+  }
+}
 function SideBar() {
 return (
   <div className='Sidebar-wrap'>
@@ -66,22 +74,26 @@ return (
       ))}
     </ul>
     <div className='dashboard-details'>
-      <h2 className='user-heading'>Users</h2>
+      <h2 className='user-heading' >Users</h2>
       <div className='user-box'>
           <UserDetails/>
       </div>
       <div>
         <UserInformation/>
       </div>
-      <div className='bottom-div'>
+            <div className='bottom-div'>
                 <div>
-                    <p className='text-line'>Showing <mark>100 < FaAngleDown/> </mark> out of 100</p>
+                    <p className='text-line'>Showing <mark>100 < FaAngleDown onClick={handleClick}/> </mark> out of 100</p>
                 </div>
                 <div>
                     <p className='text-line'> <mark><FaAngleLeft/> </mark> 1 2 3 ... 15 16 <mark><FaAngleRight/> </mark> </p>
                 </div>
             </div>
+            <div id='filtershow'>
+              <FilterSection/>
+            </div>
     </div>
+    
   </div>
 )
       }
