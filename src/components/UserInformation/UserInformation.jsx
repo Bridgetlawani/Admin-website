@@ -20,7 +20,7 @@ function UserInformation() {
     <div className='user-info-container'>
       <ul className='user-info-ul'>
           <li className='user-info-head'>ORGANIZATION <span><img src={bars}/></span></li>
-          <li className='user-info-head'>USERNAME <span><img src={bars}/></span></li>
+          <li className='user-info-head special'>USERNAME <span><img src={bars}/></span></li>
           <li className='user-info-head'>EMAIL <span><img src={bars}/></span></li>
           <li className='user-info-head'>PHONE NUMBER <span><img src={bars}/></span></li>
           <li className='user-info-head'>DATE JOINED <span><img src={bars}/></span></li>

@@ -32,7 +32,7 @@ const items = [
   {   img1: switchs, itemname: 'Switch Organization', img2: arrow,},
   {img1: board, itemname: 'Dashboard',},
   {itemname: 'CUSTOMERS',},
-  {img1: users, itemname: 'Users',},
+  {img1: users, itemname: 'Users', classname: 'specialuser'},
   {img1: guarantor, itemname: 'Guarantors',},
   {img1: loan, itemname: 'Loans',},
   {img1: models, itemname: 'Decision Models',},
@@ -62,7 +62,7 @@ return (
   <div className='Sidebar-wrap'>
     <ul className='sidebar-wrap-ul'>
       {items.map((item, index) =>(
-        <li key={index}><img src={item.img1} /> {item.itemname} <img src={item.img2} /> </li>
+        <li key={index} className={item.classname}><img src={item.img1} /> {item.itemname} <img src={item.img2} /> </li>
       ))}
     </ul>
     <div className='dashboard-details'>

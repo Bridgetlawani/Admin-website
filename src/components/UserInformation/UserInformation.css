@@ -16,7 +16,7 @@
 }
 .user-info-head{
     display: inline-block;
-    padding: 1rem 1.4rem;
+    padding: 1rem 1.6rem;
     color: #545F7D;
     font-weight: 600;
    font-size: 15px;
@@ -59,4 +59,7 @@
     font-size: 14px;
     color: #545F7D;
     text-align: left;
+}
+.special{
+    margin-right: 3rem;
 }

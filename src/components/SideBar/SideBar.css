@@ -54,3 +54,8 @@ mark{
     font-size: 14px;
     color: #545F7D;
 }
+.specialuser{
+    background-color: #d2f5f5;
+    border-left: 2px solid #39CDCC;
+    width: 97%;
+}
