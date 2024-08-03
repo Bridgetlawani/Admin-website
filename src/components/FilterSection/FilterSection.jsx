@@ -1,8 +1,5 @@
 import React from 'react'
 import './FilterSection.css'
-import { FaUserSlash } from "react-icons/fa";
-import { FaUserCheck } from "react-icons/fa";
-import { FaRegEye } from "react-icons/fa";
 import { FaAngleDown } from 'react-icons/fa';
 import { FaCalendarAlt } from 'react-icons/fa';
 
@@ -10,11 +7,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 const FilterSection = () => {
   return (
     <div>
-       {/* <div className='filtersection2'>
-            <p> <FaRegEye/> View Details </p>
-            <p> <FaUserSlash/> Blacklist User</p>
-            <p> <FaUserCheck/> Activate User </p>
-        </div> */}
+        
       {/* <img src={bars} onClick={handleClick}/> */}
        <div className='filtersection1'>
            <label htmlFor='select-org'>Organization</label>         

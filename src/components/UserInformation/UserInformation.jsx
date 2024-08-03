@@ -2,6 +2,9 @@ import React from 'react'
 import './UserInformation.css'
 import doticon from '../../assets/Images/icon.svg'
 import bars from '../../assets/Images/bars.svg'
+import { FaUserSlash } from "react-icons/fa";
+import { FaUserCheck } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
 
 
 const userinfo = [
@@ -15,6 +18,14 @@ const userinfo = [
     {companyname: 'Lendsqr', username: 'Tosin Dokunmu' , email: 'tosin@lendsqr.com', phonenumber: '08060780900', date: 'April 10, 2020 10:am', status: 'Inactive' , image: doticon ,classname: 'inactive' },
     {companyname: 'Lendsqr', username: 'Grace Effiom' , email: 'adedeji@lendsqr.com', phonenumber: '07060780922', date: 'April 30, 2020 10:am', status: 'Inactive', image: doticon , classname: 'inactive' },
 ];
+const showFilter = () => {
+  let show = document.getElementById("filtersection2");
+  if (show.style.display === "none") {
+    show.style.display = "block";
+  } else {
+    show.style.display = "none";
+  }
+} 
 
 function UserInformation() {
   return (
@@ -25,7 +36,7 @@ function UserInformation() {
           <li className='user-info-head'>EMAIL <span><img src={bars}/></span></li>
           <li className='user-info-head'>PHONE NUMBER <span><img src={bars}/></span></li>
           <li className='user-info-head'>DATE JOINED <span><img src={bars}/></span></li>
-          <li className='user-info-head'>STATUS <span><img src={bars}/></span></li>
+          <li className='user-info-head'>STATUS <span><img src={bars} onClick={showFilter}/></span></li>
       </ul>
       <ul className='user-info-ul'>
           {userinfo.map((info, index) => (
@@ -41,6 +52,11 @@ function UserInformation() {
               
           ))}
       </ul>
+      <div id='filtersection2'>
+            <p> <FaRegEye/> View Details </p>
+            <p> <FaUserSlash/> Blacklist User</p>
+            <p> <FaUserCheck/> Activate User </p>
+        </div> 
       
     </div>
   )

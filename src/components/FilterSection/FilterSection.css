@@ -23,17 +23,7 @@
 .filter-int{
     width: 80%;
 }
-.filtersection2{
-    position: relative;
-    height: 8rem;
-    width: 9rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    background-color: #fff;
-    bottom: 15rem;
-    left: 37rem;
-    padding: .2rem;
-    display: block;  
-}
+
 .reset{
     width: 98px;
     padding: 13px;

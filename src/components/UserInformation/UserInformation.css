@@ -64,3 +64,18 @@
 .special{
     margin-right: 3rem;
 }
+#filtersection2{
+    position: relative;
+    height: 8rem;
+    width: 9rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #fff;
+    bottom: 25rem;
+    left: 45rem;
+    padding: .2rem;
+    transition: 0.5sec;
+    display: none;  
+}
+#filtersection2 p{
+    color: #545F7D;
+}
